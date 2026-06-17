@@ -1,0 +1,6 @@
+.env
+tickets.xlsx
+*.log
+__pycache__/
+.venv/
+venv/
