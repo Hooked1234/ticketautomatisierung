@@ -12,6 +12,7 @@ COLUMNS = [
     "Priority",
     "Assignee",
     "Labels",
+    "Components",
     "DueDate",
     "Status",
     "JiraKey",
@@ -27,6 +28,7 @@ EXAMPLE_ROW = [
     "High",
     "",  # Assignee - Jira-Username eintragen
     "frontend,urgent",
+    "",  # Components - exakter Component-Name aus Jira (Pflichtfeld in DAH)
     "2026-06-15",
     "NEU",
     "",  # JiraKey - wird vom Skript befüllt
@@ -56,12 +58,13 @@ def main():
     ws.column_dimensions["D"].width = 10
     ws.column_dimensions["E"].width = 18
     ws.column_dimensions["F"].width = 20
-    ws.column_dimensions["G"].width = 12
-    ws.column_dimensions["H"].width = 10
-    ws.column_dimensions["I"].width = 12
-    ws.column_dimensions["J"].width = 40
-    ws.column_dimensions["K"].width = 20
-    ws.column_dimensions["L"].width = 14
+    ws.column_dimensions["G"].width = 20
+    ws.column_dimensions["H"].width = 12
+    ws.column_dimensions["I"].width = 10
+    ws.column_dimensions["J"].width = 12
+    ws.column_dimensions["K"].width = 40
+    ws.column_dimensions["L"].width = 20
+    ws.column_dimensions["M"].width = 14
 
     wb.save("tickets.xlsx")
     print("tickets.xlsx erstellt mit Beispielzeile.")
