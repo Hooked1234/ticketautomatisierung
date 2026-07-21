@@ -1,6 +1,7 @@
 .env
 tickets.xlsx
 tickets.xlsm
+*.backup-*.xlsm
 ~$*
 *.log
 __pycache__/

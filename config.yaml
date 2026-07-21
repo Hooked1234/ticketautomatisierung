@@ -1,0 +1,30 @@
+jira:
+  allowed_projects:
+    - key: DAH
+      name: Data & Analytics Hub
+
+safety:
+  dry_run_default: true
+  allow_delete: false
+  allow_project_change: false
+  allow_issue_type_change: false
+  allow_status_transition: false
+
+metadata:
+  refresh_after_hours: 24
+
+excel:
+  default_visible_columns:
+    - Action
+    - Project
+    - IssueType
+    - Summary
+    - Description
+    - Priority
+    - Components
+    - Assignee
+    - EpicLink
+    - Sprint
+    - JiraKey
+    - Result
+    - ErrorMessage
